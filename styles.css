@@ -17,8 +17,8 @@ html {
 }
 
 .page {
-  position: relative;
   max-width: 1440px;
+  position: relative;
   font-family: "Sora", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -67,7 +67,8 @@ a:hover {
   display: none;
   position: absolute;
   background-color: #0099ff;
-  width: 100%;
+  width: 100wh;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -172,20 +173,32 @@ a:hover {
   display: flex;
   justify-content: space-between;
   background-color: #0099ff;
+  padding: 20px;
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .socials {
   display: flex;
+  align-items: center;
   gap: 15px;
   color: #fafdff;
 }
 
 .socials-logo {
-  width: 2em;
+  width: 1.5em;
 }
 
 .socials-logo:hover {
   transform: scale(1.2);
+}
+
+.subtitle {
+  font-size: 12px;
 }
 
 @media (max-width: 550px) {
@@ -227,5 +240,22 @@ a:hover {
     height: auto;
     padding: 15px 0;
     font-size: 12px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .logo-footer {
+    flex-direction: row;
+    align-items: center;
+    order: 1;
+  }
+
+  .logo-title-footer {
+    display: none;
   }
 } 
