@@ -17,8 +17,8 @@ html {
 }
 
 .page {
-  max-width: 1440px;
   position: relative;
+  max-width: 1440px;
   font-family: "Sora", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -41,6 +41,8 @@ a:hover {
 }
 
 .header {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: auto;
   display: block;
@@ -82,7 +84,7 @@ a:hover {
   display: block;
   margin: 15px;
   justify-self: end;
-  color: var(--text-color);
+  color: #fafdff;
   background: none;
   border: none;
 }
@@ -156,13 +158,26 @@ a:hover {
   background-color: #0099ff;
   border-radius: 35px;
   margin: 20px 0;
-  padding: 20px;
+  padding: 40px;
   color: #fafdff;
   text-align: justify;
 }
 
+.about-content {
+  display: flex;
+}
+
 .about-title {
-  text-align: center;
+  text-align: left;
+  font-size: 54px;
+  font-weight: 500;
+  color: #fafdff;
+  text-transform: uppercase;
+}
+
+.about-image {
+  max-width: 40%;
+  flex-grow: 1;
 }
 
 /* footer part */
@@ -174,6 +189,8 @@ a:hover {
   justify-content: space-between;
   background-color: #0099ff;
   padding: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .logo-footer {
@@ -234,12 +251,21 @@ a:hover {
   .menu-list {
     display: none;
   }
-
+  
   .btn {
     width: 100%;
     height: auto;
     padding: 15px 0;
     font-size: 12px;
+  }
+
+  .about-title {
+    font-size: 25px;
+    text-wrap: wrap;
+  }
+
+  .about-image {
+    max-width: 50%;
   }
 
   .footer {
@@ -258,4 +284,5 @@ a:hover {
   .logo-title-footer {
     display: none;
   }
+
 } 
