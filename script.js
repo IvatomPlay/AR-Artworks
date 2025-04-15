@@ -2,12 +2,10 @@ const burgerBtn = document.getElementById('burgerBtn');
 const modal = document.getElementById('modal');
 const closeBtn = document.getElementById('closeBtn');
 
-burgerBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+burgerBtn.addEventListener('click', () => {
   modal.style.display = 'flex';
 });
 
-closeBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+closeBtn.addEventListener('click', () => {
   modal.style.display = 'none';
 })
