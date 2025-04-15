@@ -368,6 +368,10 @@ a:hover {
     display: none;
   }
 
+  .artworks-carousel {
+    width: 100%;
+  }
+
   .prev {
     left: 45px;
   }
