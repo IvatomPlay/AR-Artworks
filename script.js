@@ -38,12 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  prevBtn.addEventListener("click", () => {
+  prevBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     showImage(currentIndex);
   });
 
-  nextBtn.addEventListener("click", () => {
+  nextBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     currentIndex = (currentIndex + 1) % images.length;
     showImage(currentIndex);
   });

@@ -224,6 +224,7 @@ a:hover {
   display: flex;
   transition: transform 0.5s ease-in-out;
   object-fit: cover;
+  height: 100%;
 }
 
 .prev, .next {
