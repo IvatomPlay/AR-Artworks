@@ -367,4 +367,12 @@ a:hover {
   .logo-title-footer {
     display: none;
   }
+
+  .prev {
+    left: 45px;
+  }
+  
+  .next {
+    right: 45px;
+  }
 } 
