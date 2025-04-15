@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let images = [];
   let currentIndex = 0;
 
-  fetch('./localhost.json') // или укажи путь к JSON
+  fetch('localhost.json')
     .then(response => response.json())
     .then(data => {
       images = data;
